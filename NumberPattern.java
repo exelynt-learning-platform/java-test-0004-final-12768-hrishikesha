@@ -1,16 +1,16 @@
-public class NumberPattern {
+﻿public class NumberPattern {
     public static void main(String[] args) {
-        int num = 1;                          
+        int num = 1;
 
-        for (int i = 1; i <= 5; i++) {  
-            for (int j = 1; j <= i; j++) { 
+        for (int row = 1; row <= 5; row++) {
+            for (int col = 1; col <= row; col++) {
                 System.out.print(num);
-                if (j < i) {
-                    System.out.print(" ");    
+                if (col < row) {
+                    System.out.print(" ");
                 }
-                num++;                       
+                num++;
             }
-            System.out.println();             
+            System.out.println();
         }
     }
 }
